@@ -1,1 +1,2 @@
-# football-team-management-flask
+# football-Scores-moniter
+manageteams through /admin
