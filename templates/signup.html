@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Instagram</title>
+  <link rel = "icon" type = "image/JPG" href = "title.JPG">
+  <link rel="stylesheet" href="static/signup.css">
+</head>
+<body>
+  <main>
+
+	<section id="log-sec">
+		<section id="first">
+		<div id="logo">  <img src="static/logo.JPG" alt="smartphone"></div>
+    <form action="/signup" method ="post">
+		<div> <input type="email" id="uname" name="email" placeholder="Mobile number or email"></div>
+		<div> <input type="text" id="uname" name="fname" placeholder="Full Name"></div>
+    <div> <input type="text" id="uname" name="username" placeholder="username"></div>
+    <div> <input type="password" id="uname" name="password" placeholder="Password"></div>
+		<div id="login-dev"> <input type="submit" value="Sign up" id="login"></div>
+		<div id = "tx">By signing up, you agree to our Terms</div>
+    </form>
+		</section>
+
+		<section id="snd">
+			<div>Have an account? <a style="text-decoration:none" href="/" id="signup"><span style="color:#3897f0"><b>Log in</b></span></a></div>
+		</section>
+
+		<section id="getapp">
+      <p style="color:red;">{{message}}</p>
+		</section>
+
+
+	</section>
+
+
+  </main>
+
+</body>
+</html>

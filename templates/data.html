@@ -1,0 +1,34 @@
+{% extends "admin.html" %}
+
+{% block main %}
+<footer>
+  <br>
+  <br>
+  <br>
+  <h1 style="text-align: center;width: 50%;background-color: yellow; margin: auto;">{{txt}}</h1>
+  <br>
+  <table class="table table-striped" style="width: 60%; margin: auto;">
+              <tr>
+            <th>{{Serial}}</th>
+            <th>{{USERNAME}}</th>
+            <th>{{FULLNAME}}</th>
+            <th>{{EMAIL}}</th>
+            <th>{{time}}</th>
+            <th>{{delete}}</th>
+
+
+              </tr>
+              {% for row in totalusers %}
+              <tr>
+                <td>{{row.0}}</td>
+                <td>{{row.1}}</td>
+                <td>{{row.2}}</td>
+                <td>{{row.4}}</td>
+                <td>{{row.6}}</td>
+                <td><a href="/delete/{{ row.1 }}" class="btn btn-danger btn-xs" onclick="return confirm('Are You Sure For Delete?')">Delete</a></td>
+              </tr>
+              {% endfor %}
+  </table>
+</footer>
+
+{% endblock main %}

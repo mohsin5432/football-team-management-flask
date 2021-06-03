@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>ADMIN PANEL</title>
+  <link rel = "icon" type = "image/JPG" href = "static/title.JPG">
+  <link rel="stylesheet" href="static/admin.css">
+  <link rel="stylesheet" href="static/bootstrap.min.css">
+</head>
+  <header style="display: flex; justify-content: space-between;" >
+  <div>
+  <h1 style="text-align: center; margin-bottom: 50px;"><a href="/admin">ADMIN PANEL</a></h1>
+  </div>
+  <div>
+    <h1><a href="/logoutadm" class="button"><span>LOGOUT</span></a><h1>
+  </div>
+</header>
+
+<body>
+  <main style="">
+  <h1><a href="/data" class="button"><span>TOTAL USERS</span></a>&nbsp; &nbsp; : &nbsp; {{tnu}}</h1><br>
+  <h1><a href="/data24" class="button"><span>USERS IN PAST 24H</span></a>&nbsp; &nbsp;: &nbsp;{{tnu24}}<h1><br>
+  <h1><a href="/teams" class="button"><span>TOTAL TEAMS REGISTERED</span></a>&nbsp; &nbsp;: &nbsp;{{tteams}}<h1><br>
+  <h1><a href="/addteams" class="button"><span>ADD TEAMS</span></a></h1><br>
+  </main>
+  {% block main %}
+  {% endblock main %}
+</body>

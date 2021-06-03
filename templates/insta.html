@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>championship</title>
+  <link rel = "icon" type = "image/JPG" href = "static/title.JPG">
+  <link rel="stylesheet" href="static/insta.css">
+</head>
+<body>
+  <main>
+	<section id="image-sec">
+		<img src="static/phone.JPG" alt="static/smartphone" style="border-radius: 50px 20px;">
+	</section>
+
+	<section id="log-sec">
+		<section id="first" style="border-radius: 50px 20px 0px 0px;">
+      <form action="/login" method="POST">
+		<div id="logo">  <img src="static/logo.JPG" alt="smartphone"></div>
+		<div> <input type="text" id="uname" name="username" placeholder="username"></div>
+		<div> <input type="password" id="password" name="password" placeholder="Password"></div>
+		<div id="login-dev"> <input type="submit" value="Log in" id="login" /></div>
+		<div id="forgot"><button type="button" id="loginfb"><span style="color:rgb(72, 72, 132)">Forgot password?</span></button></div>
+  </form>
+		</section>
+
+		<section id="snd" style="border-radius:0px 0px 50px 20px;">
+      <form action="/signupp" method="GET">
+			<div>Don't have an account? <a href="/signup" type="button" style="text-decoration:none" id="signup"><span style="color:#3897f0"><b>Sign up</b></span></a></div>
+    </form>
+    </section>
+
+
+  </section>
+
+
+
+  </main>
+</body>
+</html>

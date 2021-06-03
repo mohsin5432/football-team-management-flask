@@ -1,0 +1,115 @@
+
+
+body {
+  justify-content: center;
+  background-color: rgb(250, 250, 250);
+}
+main{
+  justify-content: center;
+}
+#log-sec{
+  width: 50%;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+  margin-top: 10%;
+}
+
+
+#first{
+	text-align: center;
+	display: inline-block;
+	justify-content: center;
+	margin: auto;
+	margin-top: 5px;
+	padding: 10% 10% 5% 10%;
+	border: 1px solid #dbdbdb;
+	background-color: rgb(255, 255, 255);
+	overflow: hidden;
+
+
+}
+
+#snd{
+	overflow: hidden;
+    text-align: center;
+	display: inline-block;
+	justify-content: center;
+	margin-top: 5%;
+	padding: 5% 16%;
+	border: 1px solid #dbdbdb;
+	background-color: rgb(255, 255, 255);
+}
+
+
+
+
+
+
+#uname{
+  width: 270px;
+	justify-content: center;
+	height: 35px;
+  margin-bottom: 5px;
+  padding: 8px 12px;
+  border: 1px solid #dbdbdb;
+  box-sizing: border-box;
+  border-radius: 3px;
+  font-size: 14px;
+}
+
+#login{
+	width: 270px;
+	justify-content: center;
+	height: 35px;
+  margin-bottom: 5px;
+  padding: 8px 12px;
+  border: 1px solid #dbdbdb;
+  box-sizing: border-box;
+  border-radius: 3px;
+  font-size: 14px;
+	color: white;
+	background-color: #3897f0;
+}
+
+#txt{
+	justify-content: center;
+	text-align: center;
+	width: 50%;
+	color:gray;
+	margin-top: 15px;
+	display: flex;
+	flex-direction: row;
+	padding:8px 12px;
+}
+
+#signup{
+	background-color: white;
+	border: 0px;
+	color: #3897f0;
+}
+
+#getapp{
+	margin: 20px;
+}
+
+
+
+button  img{
+	height: 13px;
+	padding: 0 8px 2px;
+	margin-top: 10px;
+	background-color: white;
+}
+#loginfb{
+	border: 0px;
+	color: blue;
+	background-color: white;
+}
+#ex{
+	background-color: white;
+	margin-top: 10px;
+}
+#forgot{
+	margin-top: 10px;
+}

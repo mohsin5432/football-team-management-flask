@@ -1,0 +1,40 @@
+{% extends "admin.html" %}
+
+{% block main %}
+<footer>
+  <br>
+  <br>
+  <br>
+  <h1 style="text-align: center;width: 50%;background-color: yellow; margin: auto;">{{txt}}</h1>
+  <br>
+  <table class="table table-striped" style="width: 60%; margin: auto;">
+              <tr>
+            <th>ID</th>
+            <th>TEAM NAME</th>
+            <th>TOTAL MATCHES PLAYED</th>
+            <th>WINS</th>
+            <th>DRAWS</th>
+            <th>DEFEAT</th>
+            <th>SCORE</th>
+            <th>DELETE</th>
+            <th>EDIT</th>
+
+
+              </tr>
+              {% for row in totalteams %}
+              <tr>
+                <td>{{row.0}}</td>
+                <td>{{row.1}}</td>
+                <td>{{row.2}}</td>
+                <td>{{row.3}}</td>
+                <td>{{row.4}}</td>
+                <td>{{row.5}}</td>
+                <td>{{row.6}}</td>
+                <td><a href="/tdelete/{{ row.1 }}" class="btn btn-danger btn-xs" onclick="return confirm('Are You Sure For Delete?')">Delete</a></td>
+                <td> <a href="/edit/{{row.1}}" class="btn btn-warning btn-xs" data-toggle="modal" data-target="#modaledit{{row.0}}">Edit</a></td>
+              </tr>
+              {% endfor %}
+  </table>
+</footer>
+
+{% endblock main %}

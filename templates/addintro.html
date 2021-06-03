@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Edit Profile|Instagram</title>
+  <link rel = "icon" type = "image/JPG" href = "static/title.JPG">
+  <link rel="stylesheet" href="static/edit.css">
+</head>
+  <header>
+    <section>
+      <img src="/static/about/first.jpg" alt="option" width="50" height="50">
+    </section>
+
+    <section>
+      <img src="/static/about/second.jpg" alt="insta logo" width="50" height="50">
+    </section>
+
+
+    <section>
+      <h1 id="name">{{name}}</h1>
+    </section>
+    </header>
+    <body>
+  <section>
+    <form class="" action="/addintro" method="post">
+      <h1>NAME : <input type="text" id="intro" name="fname" value="{{name}}" placeholder="Enter your Name"> </h1><br>
+      <h1>INFO : <input type="text" id="info" name="intro" value="{{txt}}" placeholder="type your info here"></h1><br>
+      <h1 id="message"><input type="submit" value="UPDATE PROFILE" id="button"> {{message}}</h1>
+    </form>
+  </section>
+  </body>
+
+  <div class="navbar">
+    <a href="/">Home</a>
+    <a href="/addintro" class="active">Edit Profile</a>
+    <a href="/delintro">Delete Info</a>
+    <a href="/logout">Logout</a>
+  </div>

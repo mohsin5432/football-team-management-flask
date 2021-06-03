@@ -1,0 +1,30 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+  background-color: white;
+}
+
+main{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+#terms {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+  justify-content: center;
+	border: 1px solid #dbdbdb;
+	background-color: rgb(255, 255, 255);
+  margin-top: 10%;
+}
+
+body {
+  background-color: rgb(250, 250, 250);
+}
+#mm{
+  text-align: center;
+  color: red:
+}
